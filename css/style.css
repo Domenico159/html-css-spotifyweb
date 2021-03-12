@@ -18,13 +18,11 @@ h2{
 .up{
     text-transform: uppercase;
     color: #fff;
+    font-size:14px;
 }
 
-.row1{
-    margin-bottom: 220px;
-}
-.row2{
-    margin-bottom:130px;
+.row:not(:last-child){
+    margin-bottom: 100px;
 }
 
 img{
@@ -63,8 +61,11 @@ img{
     width:230px;
     height:calc(100vh - 90px);
     background:#000;
-    padding-left: 10px;
-
+    padding-left: 20px;
+    padding-right: 20px;
+    display:flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 /* Logo */
@@ -95,11 +96,14 @@ img{
     text-decoration: none;
 }
 .sidebar .utilitys ul li img{
-    max-width:30px;
+    max-width:20px;
     margin-right: 5px;
 }
 
 /* Playlist */
+.sidebar .playlist{
+    flex-grow: 2;
+}
 
 .sidebar .playlist ul {
     list-style: none;
@@ -113,8 +117,8 @@ img{
 }
 
 .sidebar .playlist ul li:first-child{
-    font-size:14;
-    font-weight: 600;
+    font-size:14px;
+    font-weight: 700;
     margin-top:10px;
     margin-bottom: 20px;
 }
@@ -127,21 +131,64 @@ img{
 }
 
 .sidebar .playlist ul li a .plus-square{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color:#7d7f84;
     position: relative;
-    border-radius:5px;
+    border-radius:2px;
     margin-right: 10px;
 }
 
 .sidebar .playlist ul li a .plus-square i{
-    font-size: 26px;
+    font-size: 20px;
     color: #000;
     position: absolute;
     top: 50%;
     left:50%;
     transform:translate(-50% , -50%)
+}
+
+/* Download */
+.sidebar .download{
+    margin-bottom: 10px;
+}
+
+.sidebar .download a{
+    display:flex;
+    text-decoration: none;
+    color: #7d7f84;
+    font-size:12px;
+    font-weight: 600;
+}
+
+.sidebar .download a h2{
+    align-self: center;
+}
+
+.sidebar .download img{
+    width: 20px;
+    margin-right: 10px;;
+}
+
+.sidebar .download .user img{
+    width: 100%;
+}
+.sidebar .download>span{
+    display:inline-block;
+    width:100%;
+    height:1px;
+    background:#7d7f84;
+    margin-bottom: 10px;
+}
+
+.sidebar .download .user{
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    background:#7d7f84;
+    overflow:hidden;
+    margin-right: 10px;
 }
 
 
@@ -221,6 +268,7 @@ img{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 10px;
+    cursor: pointer;
 }
 
 /* Footer */
