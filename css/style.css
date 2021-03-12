@@ -38,9 +38,7 @@ img{
 }
 
 .card .img-container{
-    max-width: 200px;
-    height:200px;
-    max-height: 200px;
+    flex-basis: 100%;
     margin-bottom: 15px;
 }
 
