@@ -11,22 +11,43 @@ body{
 }
 
 /* Utilitys*/
+
+h2{
+    color: #fff;
+}
+.up{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.row1{
+    margin-bottom: 220px;
+}
+.row2{
+    margin-bottom:130px;
+}
+
+img{
+    max-width: 100%;
+}
+
 .card{
     padding:30px 15px 20px 0px;
     text-align: center;
-    line-height:30px;
     max-width: calc(100% / 6);
     max-height:200px;
 }
 
 .card .img-container{
     max-width: 200px;
-    max-height:200px;
+    height:200px;
+    max-height: 200px;
     margin-bottom: 15px;
 }
 
 .cards-content  h3{
     color: #fff;
+    font-size:18px;
 }
 
 .cards-content .img-container img{
@@ -45,8 +66,87 @@ body{
     width:230px;
     height:calc(100vh - 90px);
     background:#000;
+    padding-left: 10px;
 
 }
+
+/* Logo */
+.sidebar .logo {
+    padding:20px 80px 10px 0px;
+    margin-bottom: 20px;
+}
+
+/* Utilitys-sidebar */
+.sidebar .utilitys{
+    margin-bottom:30px;
+}
+
+.sidebar .utilitys ul{
+    font-weight: 600;
+    font-size:14px;
+    list-style: none;
+}
+
+.sidebar .utilitys ul li{
+    margin-bottom:10px;
+}
+
+.sidebar .utilitys ul li a{
+    display:flex;
+    align-items: center;
+    color: #7d7f84;
+    text-decoration: none;
+}
+.sidebar .utilitys ul li img{
+    max-width:30px;
+    margin-right: 5px;
+}
+
+/* Playlist */
+
+.sidebar .playlist ul {
+    list-style: none;
+}
+
+.sidebar .playlist ul li a{
+    display:flex;
+    align-items: center;
+    color: #7d7f84;
+    text-decoration: none;
+}
+
+.sidebar .playlist ul li:first-child{
+    font-size:14;
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.sidebar .playlist ul li:not(:first-child){
+    margin-top:10px;
+    margin-bottom:20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.sidebar .playlist ul li a .plus-square{
+    width: 50px;
+    height: 50px;
+    background-color:#7d7f84;
+    position: relative;
+    border-radius:5px;
+    margin-right: 10px;
+}
+
+.sidebar .playlist ul li a .plus-square i{
+    font-size: 26px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50% , -50%)
+}
+
 
 /* Main-content */
 .main-content{
@@ -59,6 +159,10 @@ body{
 }
 
 /* Link menù */
+.main-content .link{
+    margin-bottom: 40px;
+}
+
 .main-content ul {
     list-style: none;
     justify-content: center;
@@ -85,6 +189,16 @@ body{
 /* Cards content */
 .cards-content{
     display:flex;
+}
+
+.main-content h5{
+    margin-top:20px;
+}
+
+/* Row3 */
+.main-content .row3 .cards-content .img-container {
+    overflow:hidden;
+    border-radius: 50%;
 }
 
 /* Header */
