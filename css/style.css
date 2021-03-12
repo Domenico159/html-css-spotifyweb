@@ -1,0 +1,97 @@
+    /*General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #7d7f84;
+}
+
+/* Utilitys*/
+
+
+
+/* Main content */
+.content{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:230px;
+    height:calc(100vh - 90px);
+    background:#000;
+
+}
+
+/* Main-content */
+.main-content{
+    height:calc(100vh - 90px);
+    width:calc(100vw - 230px);
+    background:#141922;
+    position: relative;
+    padding-top: 100px;
+}
+
+/* Link menù */
+.main-content ul {
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    display:flex;
+}
+
+.main-content ul li{
+    margin-right: 15px;
+}
+
+.main-content ul li:last-child{
+    margin-right: 0;
+}
+
+.main-content ul li a{
+    text-decoration: none;
+    color: #7d7f84;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+/* Cards content */
+.cards-content{
+    
+}
+
+/* Header */
+.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:rgba(0,0 ,0 , 0.5);
+    width:calc(100vw - 230px);
+    height: 90px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.header button{
+    background:transparent;
+    padding:15px 50px;
+    border:2px solid #f6f7f7;
+    border-radius:30px;
+    color: #f6f7f7;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+/* Footer */
+.bottom-bar{
+    height:90px;
+    background:#282828;
+}
