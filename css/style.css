@@ -34,8 +34,7 @@ img{
 .card{
     padding:30px 15px 20px 0px;
     text-align: center;
-    max-width: calc(100% / 6);
-    max-height:200px;
+    flex-basis: calc(100% / 6);
 }
 
 .card .img-container{
