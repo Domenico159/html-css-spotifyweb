@@ -12,6 +12,7 @@ body{
 
 /* Utilitys*/
 
+
 h2{
     color: #fff;
 }
@@ -89,6 +90,10 @@ img{
     margin-bottom:10px;
 }
 
+.sidebar .utilitys ul li a:hover{
+    color:#fff;
+}
+
 .sidebar .utilitys ul li a{
     display:flex;
     align-items: center;
@@ -114,6 +119,10 @@ img{
     align-items: center;
     color: #7d7f84;
     text-decoration: none;
+}
+
+.sidebar .playlist ul li a:hover{
+    color: #fff;
 }
 
 .sidebar .playlist ul li:first-child{
@@ -220,6 +229,10 @@ img{
 
 .main-content ul li:last-child{
     margin-right: 0;
+}
+
+.main-content ul li a:hover{
+    color: #fff;
 }
 
 .main-content ul li a{
