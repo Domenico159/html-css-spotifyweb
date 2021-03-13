@@ -163,6 +163,10 @@ a{
     font-weight: 600;
 }
 
+.sidebar .download a:hover{
+    color: #fff;
+}
+
 .sidebar .download a h2{
     align-self: center;
 }
@@ -404,6 +408,7 @@ footer .play a:not(:last-child){
 }
 
 /* Footer command */
+
 footer .command-container{
     flex-grow: 2;
     display: flex;
@@ -428,10 +433,12 @@ footer .command-container a:hover{
 footer .command-container .bar-command{
     display: flex;
     align-items: center;
+    width:60%;
+    min-width:200px;
 }
 
 footer .command-container .bar-command span{
-    width: 500px;
+    width: 100%;
     height:3px;
     background:#5a5a5a;
     margin-left: 15px;
@@ -441,7 +448,7 @@ footer .command-container .bar-command span{
 }
 
 footer .command-container .bar-command span>div{
-    width: 100px;
+    width: 20%;
     height:3px;
     background:#ffffff;
     border-radius:5px;
@@ -459,6 +466,7 @@ footer .command-container .bar-command span>div::after{
     top: 50%;
     transform:translate(-50% , -50%);
     opacity: 0;
+    cursor: pointer;
 }
 
 .command-container .bar-command:hover span>div::after{
@@ -487,7 +495,6 @@ footer .control-bar{
     display: flex;
     align-items: center;
 }
-
 footer .control-bar span>div::after{
     content:"";
     width:12px;
@@ -500,6 +507,7 @@ footer .control-bar span>div::after{
     top: 50%;
     transform:translate(-50% , -50%);
     opacity: 0;
+    cursor: pointer;
 }
 
 .control .control-bar:hover span>div{
@@ -511,7 +519,7 @@ footer .control-bar span>div::after{
 }
 
 footer .control-bar span>div{
-    width: 50px;
+    width: 50%;
     height:3px;
     background:#ffffff;
     border-radius:5px;
@@ -523,4 +531,5 @@ footer .control-bar span{
     background:#5a5a5a;
     position: relative;
     border-radius:5px;
+    display:inline-block;
 }
