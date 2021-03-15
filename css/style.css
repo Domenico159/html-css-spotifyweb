@@ -476,7 +476,7 @@ footer .command-container .bar-command span>div::after{
     background-color: #fff;
     display:inline-block;
     position: absolute;
-    right:77%;
+    right:76%;
     top: 50%;
     transform:translate(-50% , -50%);
     opacity: 0;
