@@ -375,6 +375,7 @@ a{
 footer .play{
     display: flex;
     align-items:center;
+    min-width: 190px;
 }
 
 footer .play img{
