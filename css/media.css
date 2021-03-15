@@ -33,6 +33,13 @@
     }
 }
 
+@media (max-width: 650px){
+    footer .control-bar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* Responsive max-width 600px******************************* */
 
 @media (max-width: 600px){

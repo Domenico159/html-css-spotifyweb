@@ -376,8 +376,10 @@ a{
 .bottom-bar{
     height:90px;
     background:#282828;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     display: flex;
+    justify-content:space-between;
     align-items:center;
     overflow-x: auto;
 }
@@ -396,7 +398,7 @@ footer .play img{
 }
 
 footer .play .text-album{
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 footer .play h4{
@@ -423,10 +425,10 @@ footer .play a:not(:last-child){
 /* Footer command */
 
 footer .command-container{
-    flex-grow: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 footer .command-container a:nth-child(3){
@@ -492,7 +494,14 @@ footer .command-container .bar-command span>div::after{
 .bar-command h5{
     color: #fff;
 }
+.icon-volume{
+    display:flex;
+}
 
+footer .control{
+    width: 180px;
+    margin-left: 15px;
+}
 
 footer .control a{
     color: #fff;
@@ -538,10 +547,15 @@ footer .control-bar span>div{
 }
 
 footer .control-bar span{
-    width: 100px;
+    width: 80px;
     height:3px;
     background:#5a5a5a;
     position: relative;
     border-radius:5px;
     display:inline-block;
+}
+
+footer .volume{
+    display:flex;
+    align-items: center;
 }
