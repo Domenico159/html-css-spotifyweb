@@ -120,3 +120,28 @@
         overflow:hidden;
     }
 }
+
+@media (max-width: 550px){
+
+    footer .play{
+        display: flex;
+        align-items:center;
+        min-width: 140px;
+    }
+
+    footer .play img{
+        margin-right: 15px;
+        width: 30px;
+    }
+    footer .play .text-album{
+        margin-right: 10px;
+    }
+    
+    footer .play h4{
+        color: #fff;
+        font-size:10px;
+    }
+    footer .play h5{
+        font-size:8px;
+    }
+}
